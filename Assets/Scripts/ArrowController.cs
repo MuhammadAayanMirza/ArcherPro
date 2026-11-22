@@ -45,7 +45,9 @@ public class ArrowController : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         rb.isKinematic = true;
 
+        
         transform.SetParent(collision.transform, true);
+        
 
         transform.SetPositionAndRotation(impactPosition, impactRotation);
 
